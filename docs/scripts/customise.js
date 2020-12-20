@@ -349,11 +349,15 @@ function exportIcons() {
 	});
 }
 
+alert("test 1");
+
 { // theme setting options
 	function setTheme(newTheme) {
 		document.documentElement.className = "theme-" + newTheme;
 		currentTheme = newTheme;
+		alert("test 4");
 		render();
+		alert("test 5");
 	}
 
 	setTheme(preferredTheme);
@@ -361,14 +365,17 @@ function exportIcons() {
 	let themeOptions = document.querySelectorAll("input[name=theme][type=radio]");
 
 	function updateThemeFromOptions() {
+		alert("test 6");
 		let newTheme;
 		for(let themeOption of themeOptions) {
 			if(themeOption.checked) {
 				newTheme = themeOption.value;
 			}
 		}
+		alert("test 7");
 		console.log("Changing theme to " + newTheme);
 		if(newTheme != currentTheme) {
+			alert("test 8");
 			setTheme(newTheme);
 		}
 	}
@@ -380,6 +387,8 @@ function exportIcons() {
 		});
 	}
 }
+
+alert("test 2");
 
 { // style setting options
 	function setStyle(newStyle) {
@@ -425,5 +434,7 @@ function exportIcons() {
 
 	window.addEventListener('resize', updateCanvasSize);
 }
+
+alert("test 3");
 
 loadIconSetImage();
