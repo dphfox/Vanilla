@@ -1,0 +1,126 @@
+<html lang="en" class="theme-platinum">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vanilla</title>
+
+	<link rel="stylesheet" href="/styles/colours.css">
+	<link rel="stylesheet" href="/styles/customise.css">
+
+	<link id="favicon" rel="icon" type="image/png" href="/assets/favicon-light.png">
+
+	<script src="/scripts/favicon.js"></script>
+	<script src="/scripts/customise-early.js"></script>
+	<script src="/scripts/libs/jszip.min.js"></script>
+
+	<script src="/scripts/footer.js" defer></script>
+	<script src="/scripts/customise.js" defer></script>
+	<script src="/scripts/dialogs.js" defer></script>
+</head>
+<body>
+	<main>
+		<h1>Step 1: Choose your theme</h1>
+		<p>Vanilla uses an alternate palette for dark theme which improves contrast.</p>
+
+		<fieldset id="theme-options">
+			<label><input type="radio" name="theme" value="platinum" checked>Platinum (light)</label>
+			<label><input type="radio" name="theme" value="graphite"        >Graphite (dark) </label>
+		</fieldset>
+
+		<h1>Step 2: Choose your style</h1>
+		<p>You can add colours for easier navigation or use a single colour for a cleaner look.</p>
+
+		<fieldset id="style-options">
+			<label><input type="radio" name="style" value="colourful" checked>Colourful</label>
+			<label><input type="radio" name="style" value="mono"             >Mono     </label>
+		</fieldset>
+
+		<h1>Step 3: Download your icon set</h1>
+
+		<a class="primary-button" href="#" onclick="showModalDialog('donate');">Download icon set .zip</a>
+		<a class="secondary-button" href="#" onclick="showModalDialog('how-to-install');">How to install</a>
+
+		<small>
+			<a href="#" onclick="showModalDialog('license');">(you agree to the license terms by downloading these icons)</a>
+		</small>
+
+		<footer>
+		The Vanilla icon set is © Elttob
+		</footer>
+	</main>
+	<hr>
+	<canvas id="preview" width=0 height=0></canvas>
+
+	<dialog id="license">
+		<h1>License terms</h1>
+		<p>Vanilla is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons BY-NC 4.0 International</a>.</p>
+		<p>That means you can use and adapt the icons, as long as you provide attribution and don't use them commercially. <a href="https://wiki.creativecommons.org/wiki/NonCommercial_interpretation">(what is noncommercial?)</a></p>
+		<h1>Examples for non-lawyers</h1>
+		<p>Some examples of things you're allowed to do:</p>
+		<ul>
+			<li>Take these icons for personal use, in Roblox Studio or elsewhere</li>
+			<li>Use the icons in your noncommercial Roblox game, <em>with attribution</em></li>
+			<li>Use the icons in your free project outside of Roblox, <em>with attribution</em></li>
+			<li>Create your own free icon set based on Vanilla, <em>with attribution</em></li>
+		</ul>
+		<p>Some examples of things you're <strong>not</strong> allowed to do:</p>
+		<ul>
+			<li>Share these icons (or derivatives you made) without attribution to either Elttob or the Vanilla icon set</li>
+			<li>Make money (including DevEx-ing Robux) off of these icons by selling them or using them in commercial games, plugins or projects</li>
+		</ul>
+
+		<p><small><a href="https://creativecommons.org/licenses/by-nc/4.0/legalcode">(these examples aren't a replacement for the legal text - they're for informational purposes only! I'm not a lawyer.)</a></small></p>
+
+		<h1>Negotiation of terms</h1>
+		
+		<p>If you want to use the icons, but these terms don't work for you (e.g. for commercial use),
+			<a href="https://twitter.com/rbxe_">feel free to get in touch on Twitter</a> - I'm happy to help you out!</p>
+
+		<a class="primary-button" href="#" onclick="showModalDialog(null);">OK</a>
+	</dialog>
+
+	<dialog id="donate">
+		<h1>Thank you :)</h1>
+		
+		<p>
+			Thanks for using the Vanilla icon set! It took a ton of time and effort to develop its visual style and create each one of the hundreds of icons in
+			the set.
+		</p>
+
+		<p style="padding-bottom: 1px;">
+			As an independent designer and software developer, any amount you're willing to give - whether Robux or real money - is hugely
+			appreciated <3
+		</p>
+
+		<a class="primary-button" href="#">Donate on Roblox</a>
+		<a class="secondary-button" href="#" onclick="exportIcons();">Ignore and finish download</a>
+	</dialog>
+
+	<dialog id="preparing-download">
+		<h1>Preparing your download...</h1>
+		<p>This might take a short while - we're generating the files on your local computer.</p>
+	</dialog>
+
+	<dialog id="how-to-install">
+		<h1>Installing your icons with Mod Manager</h1>
+		<ul>
+			<li>Open Roblox Studio Mod Manager <a href="https://github.com/CloneTrooper1019/Roblox-Studio-Mod-Manager">(or download it here)</a></li>
+			<li>Click 'Edit Class Icons' to open the class icon editor</li>
+			<li>Click 'Open Class Icon Folder'</li>
+			<li>Drop in all the icons from the 'ModManagerIcons' folder that came with your download.</li>
+		</ul>
+
+		<h1>Installing your icon set manually</h1>
+		<ul>
+			<li>Find your Roblox folder (e.g. on Windows, this is %AppData%/Local/Roblox/)</li>
+			<li>Go into /Versions/, then go into the latest version folder (check date modified!)</li>
+			<li>Navigate to the /content/textures/ folder</li>
+			<li>Drop in the 'ClassImages.png' image that came with your download.</li>
+		</ul>
+
+		<p style="padding-bottom: 1px;">Something to note: if you're installing manually, you'll have to redo this after every Roblox update.</p>
+
+		<a class="primary-button" href="#" onclick="showModalDialog(null);">OK</a>
+	</dialog>
+</body>
+</html>

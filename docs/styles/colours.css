@@ -1,0 +1,37 @@
+:root.theme-platinum {
+	--main-background: #EEEEEE;
+	--main-text: #333333;
+
+	--light: #FFFFFF;
+	--midlight: #DDDDDD;
+	--mid: #CCCCCC;
+
+	--accent: #006FB2;
+	--accent-text: #FFFFFF;
+	
+	--icon-red: #BF4040;
+	--icon-yellow: #DF9320;
+	--icon-green: #169C44;
+	--icon-blue: #006FB2;
+	--icon-purple: #AF38CD;
+	--icon-grey: #333333;
+}
+
+:root.theme-graphite {
+	--main-background: #333333;
+	--main-text: #EEEEEE;
+
+	--light: #444444;
+	--midlight: #222222;
+	--mid: #1A1A1A;
+
+	--accent: #009FFF;
+	--accent-text: #FFFFFF;
+	
+	--icon-red: #FF6666;
+	--icon-yellow: #FFBC57;
+	--icon-green: #26D964;
+	--icon-blue: #4CBCFF;
+	--icon-purple: #E066FF;
+	--icon-grey: #EBEBEB;
+}

@@ -1,0 +1,286 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--main-background);
+	color: var(--main-text);
+	font: 1em/1.25 system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+
+	display: grid;
+	grid-template: "main hr preview" 100% / 25rem 1px auto;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+
+	overflow: hidden;
+
+	transition: background-color 0.4s ease 0s, color 0.4s ease 0s;
+}
+
+@media screen and (max-width: 60rem) {
+	body {
+		grid-template:
+			"preview" 60%
+			"hr" 1px
+			"main" 40% / 100%;
+	}
+}
+
+#preview {
+	grid-area: preview;
+	width: 100%;
+	height: 100%;
+}
+
+hr {
+	border: none;
+	background-color: currentColor;
+	opacity: 0.25;
+}
+
+main {
+	position: relative;
+	grid-area: main;
+
+	overflow-y: auto;
+
+	padding: 0.5rem 1rem;
+}
+
+main > * {
+	margin-bottom: 1rem;
+}
+
+h1 {
+	position: relative;
+	padding: 1rem 0;
+
+	font-weight: 600;
+	font-size: 1rem;
+
+	line-height: 100%;
+}
+
+h1::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 1px;
+
+	background-color: currentColor;
+	opacity: 0.25;
+}
+
+a {
+	color: var(--accent);
+	transition: color 0.4s ease 0s;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+small {
+	font-size: 0.75rem;
+}
+
+ul {
+	margin-left: 1.5rem;
+}
+
+li {
+	margin-bottom: 0.5rem;
+}
+
+.primary-button,
+.secondary-button {
+	position: relative;
+	width: auto;
+	height: 2rem;
+	padding: 0 1rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+
+	border-radius: 0.25rem;
+	
+	font-size: 0.75rem;
+	text-decoration: none;
+
+	cursor: default;
+
+	--button-overlay: rgba(0, 0, 0, 0);
+}
+
+.primary-button::before,
+.secondary-button::before {
+	content: "";
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+	background-color: var(--button-overlay);
+	transition: background-color 0.05s ease-out;
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+	--button-overlay: rgba(0, 0, 0, 0.1);
+}
+
+.primary-button:active,
+.secondary-button:active {
+	--button-overlay: rgba(0, 0, 0, 0.25);
+}
+
+.primary-button {
+	background-color: var(--accent);
+	color: var(--accent-text);
+	transition: background-color 0.4s ease 0s, color 0.4s ease 0s;
+}
+
+.secondary-button {
+	background-color: var(--midlight);
+	color: var(--main-text);
+	transition: background-color 0.4s ease 0s, color 0.4s ease 0s;
+}
+
+fieldset {
+	display: contents;
+}
+
+fieldset > label {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	margin-bottom: 1rem;
+}
+
+input[type=radio] {
+	margin-right: 0.5rem;
+	appearance: none;
+
+	position: relative;
+	width: 0.875rem;
+	height: 0.875rem;
+
+	display: block;
+
+	background-color: var(--light);
+	border-radius: 50%;
+
+	transition: background-color 0.2s ease 0s;
+}
+
+input[type=radio]:focus {
+	outline: none;
+	box-shadow: 0 0 0 2px var(--mid);
+	transition: box-shadow 0.2s ease 0s;
+}
+
+input[type=radio]::after {
+	content: "";
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+	display: block;
+
+	border-radius: 50%;
+	border: 1px solid var(--main-text);
+	opacity: 0.5;
+
+	pointer-events: none;
+	transition: border-color 0.2s ease 0s, border-width 0.2s ease 0s, opacity 0.2s ease 0s;
+}
+
+input[type=radio]:checked {
+	background-color: var(--accent-text);
+}
+
+input[type=radio]:checked::after {
+	border-color: var(--accent);
+	border-width: 0.25rem;
+	opacity: 1;
+}
+
+
+footer {
+	position: sticky;
+
+	margin-top: 2rem;
+	margin-bottom: 0.5rem;
+
+	top: 100%;
+	left: 0;
+	right: 0;
+
+	font-size: 0.75rem;
+	opacity: 0.75;
+
+	text-align: center;
+}
+
+dialog {
+	position: fixed;
+	z-index: 9999;
+	width: 40rem;
+	height: auto;
+	top: 50%;
+
+	display: block;
+	opacity: 0;
+	pointer-events: none;
+
+	min-height: 10rem;
+
+	max-width: calc(100% - 2rem);
+	max-height: calc(100% - 2rem);
+
+	margin: auto;
+	padding: 0.5rem 1rem;
+
+	border: none;
+	border-radius: 0.25rem;
+
+	background-color: inherit;
+	color: inherit;
+	box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.5), 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+
+	overflow-x: hidden;
+	overflow-y: auto;
+
+	transform: translateY(-50%) translateY(0.5px) scale(1.1);
+
+	transition: opacity 0.2s ease 0s, transform 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+}
+
+dialog[open] {
+	opacity: 1;
+	pointer-events: auto;
+	transform: translateY(-50%) translateY(0.5px);
+}
+
+dialog > * {
+	margin-bottom: 1rem;
+}
+
+dialog > :last-child {
+	margin-bottom: 0.5rem;
+}
