@@ -1,6 +1,10 @@
 function showModalDialog(dialogId) {
-	let dialogs = document.querySelectorAll("dialog");
+	let dialogs = document.querySelectorAll(".dialog");
 	for(let dialog of dialogs) {
-		dialog.open = dialog.id == dialogId;
+		if(dialog.id == dialogId) {
+			dialog.classList.add("open");
+		} else {
+			dialog.classList.remove("open");
+		}
 	}
 }

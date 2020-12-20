@@ -279,7 +279,7 @@ footer {
 	text-align: center;
 }
 
-dialog {
+.dialog {
 	position: fixed;
 	z-index: 9999;
 	width: 40rem;
@@ -313,16 +313,16 @@ dialog {
 	transition: opacity 0.2s ease 0s, transform 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s;
 }
 
-dialog[open] {
+.dialog.open {
 	opacity: 1;
 	pointer-events: auto;
 	transform: translateY(-50%) translateY(0.5px);
 }
 
-dialog > * {
+.dialog > * {
 	margin-bottom: 1rem;
 }
 
-dialog > :last-child {
+.dialog > :last-child {
 	margin-bottom: 0.5rem;
 }

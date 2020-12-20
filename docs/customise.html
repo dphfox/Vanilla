@@ -52,7 +52,7 @@
 	<hr>
 	<canvas id="preview" width=0 height=0></canvas>
 
-	<dialog id="license">
+	<div class="dialog" id="license">
 		<h1>License terms</h1>
 		<p>Vanilla is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons BY-NC 4.0 International</a>.</p>
 		<p>That means you can use and adapt the icons, as long as you provide attribution and don't use them commercially. <a target="_blank" href="https://wiki.creativecommons.org/wiki/NonCommercial_interpretation">(what is noncommercial?)</a></p>
@@ -78,9 +78,9 @@
 			<a target="_blank" href="https://twitter.com/rbxe_">feel free to get in touch on Twitter</a> - I'm happy to help you out!</p>
 
 		<a class="primary-button" href="#" onclick="showModalDialog(null);">OK</a>
-	</dialog>
+	</div>
 
-	<dialog id="donate">
+	<div class="dialog" id="donate">
 		<h1>Thank you :)</h1>
 		
 		<p>
@@ -95,14 +95,14 @@
 
 		<a class="primary-button" href="https://buymeacoff.ee/elttob" target="_blank" onclick="document.querySelector('#donate-finish-download').innerText='Finish download';">Donate (buy me a coffee!)</a>
 		<a id="donate-finish-download" class="secondary-button" href="#" onclick="exportIcons();">Ignore and finish download</a>
-	</dialog>
+	</div>
 
-	<dialog id="preparing-download">
+	<div class="dialog" id="preparing-download">
 		<h1>Preparing your download...</h1>
 		<p>This might take a short while - we're generating the files on your local computer.</p>
-	</dialog>
+	</div>
 
-	<dialog id="how-to-install">
+	<div class="dialog" id="how-to-install">
 		<h1>Installing your icons with Mod Manager</h1>
 		<ul>
 			<li>Open Roblox Studio Mod Manager <a target="_blank" href="https://github.com/CloneTrooper1019/Roblox-Studio-Mod-Manager">(or download it here)</a></li>
@@ -122,6 +122,6 @@
 		<p style="padding-bottom: 1px;">Something to note: if you're installing manually, you'll have to redo this after every Roblox update.</p>
 
 		<a class="primary-button" href="#" onclick="showModalDialog(null);">OK</a>
-	</dialog>
+	</div>
 </body>
 </html>
