@@ -293,6 +293,8 @@ footer {
 	width: 40rem;
 	height: auto;
 	top: 50%;
+	left: 0;
+	right: 0;
 
 	display: block;
 	opacity: 0;
