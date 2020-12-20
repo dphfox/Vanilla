@@ -362,23 +362,25 @@ function exportIcons() {
 
 	function updateThemeFromOptions() {
 		let newTheme;
-		for(let themeOption of themeOptions) {
+		Object.keys(themeOptions).forEach(themeName => {
+			let themeOption = themeOptions[themeName];
 			if(themeOption.checked) {
 				newTheme = themeOption.value;
 			}
-		}
+		});
 		console.log("Changing theme to " + newTheme);
 		if(newTheme != currentTheme) {
 			setTheme(newTheme);
 		}
 	}
 
-	for(let themeOption of themeOptions) {
+	Object.keys(themeOptions).forEach(themeName => {
+		let themeOption = themeOptions[themeName];
 		themeOption.checked = themeOption.value == currentTheme;
 		themeOption.addEventListener('click', function() {
 			updateThemeFromOptions();
 		});
-	}
+	});
 }
 
 { // style setting options
@@ -393,23 +395,25 @@ function exportIcons() {
 
 	function updateStyleFromOptions() {
 		let newStyle;
-		for(let styleOption of styleOptions) {
+		Object.keys(styleOptions).forEach(styleName => {
+			let styleOption = styleOptions[styleName];
 			if(styleOption.checked) {
 				newStyle = styleOption.value;
 			}
-		}
+		});
 		console.log("Changing style to " + newStyle);
 		if(newStyle != currentStyle) {
 			setStyle(newStyle);
 		}
 	}
 
-	for(let styleOption of styleOptions) {
+	Object.keys(styleOptions).forEach(styleName => {
+		let styleOption = styleOptions[styleName];
 		styleOption.checked = styleOption.value == currentStyle;
 		styleOption.addEventListener('click', function() {
 			updateStyleFromOptions();
 		});
-	}
+	});
 }
 
 {
