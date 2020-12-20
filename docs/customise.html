@@ -20,38 +20,39 @@
 <body>
 	<div id="page-loading"></div>
 	<main>
-		<h1>Step 1: Choose your theme</h1>
-		<p>Vanilla uses an alternate palette for dark theme which improves contrast.</p>
+		<section class="main-section">
+			<h1>Step 1: Choose your theme</h1>
+			<p>Vanilla uses an alternate palette for dark theme which improves contrast.</p>
 
-		<fieldset id="theme-options">
-			<label><input type="radio" name="theme" value="platinum" checked>Platinum (light)</label>
-			<label><input type="radio" name="theme" value="graphite"        >Graphite (dark) </label>
-		</fieldset>
+			<fieldset id="theme-options">
+				<label><input type="radio" name="theme" value="platinum" checked>Platinum (light)</label>
+				<label><input type="radio" name="theme" value="graphite"        >Graphite (dark) </label>
+			</fieldset>
 
-		<h1>Step 2: Choose your style</h1>
-		<p>You can add colours for easier navigation or use a single colour for a cleaner look.</p>
+			<h1>Step 2: Choose your style</h1>
+			<p>You can add colours for easier navigation or use a single colour for a cleaner look.</p>
 
-		<fieldset id="style-options">
-			<label><input type="radio" name="style" value="colourful" checked>Colourful</label>
-			<label><input type="radio" name="style" value="mono"             >Mono     </label>
-		</fieldset>
+			<fieldset id="style-options">
+				<label><input type="radio" name="style" value="colourful" checked>Colourful</label>
+				<label><input type="radio" name="style" value="mono"             >Mono     </label>
+			</fieldset>
 
-		<h1>Step 3: Download your icon set</h1>
+			<h1>Step 3: Download your icon set</h1>
 
-		<a class="primary-button" href="#" onclick="showModalDialog('donate');">Download icon set .zip</a>
-		<a class="secondary-button" href="#" onclick="showModalDialog('how-to-install');">How to install</a>
+			<a class="primary-button" href="#" onclick="showModalDialog('donate');">Download icon set .zip</a>
+			<a class="secondary-button" href="#" onclick="showModalDialog('how-to-install');">How to install</a>
 
-		<small>
-			<a href="#" onclick="showModalDialog('license');">(you agree to the license terms by downloading these icons)</a>
-		</small>
+			<small>
+				<a href="#" onclick="showModalDialog('license');">(you agree to the license terms by downloading these icons)</a>
+			</small>
 
-		<footer>
-		The Vanilla icon set is © Elttob
-		</footer>
+			<footer>
+			The Vanilla icon set is © Elttob
+			</footer>
+		</section>
+		<hr>
+		<canvas id="preview" width=0 height=0></canvas>
 	</main>
-	<hr>
-	<canvas id="preview" width=0 height=0></canvas>
-
 	<div class="dialog" id="license">
 		<h1>License terms</h1>
 		<p>Vanilla is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons BY-NC 4.0 International</a>.</p>
