@@ -368,6 +368,7 @@ alert("test 1");
 		alert("test 6 WITH TRY");
 		try {
 			let themeOptions = document.querySelectorAll("input[name=theme][type=radio]");
+			alert("theme options " + themeOptions);
 			let newTheme;
 			for(let themeOption of themeOptions) {
 				if(themeOption.checked) {
