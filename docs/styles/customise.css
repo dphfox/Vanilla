@@ -229,6 +229,7 @@ input[type=radio] {
 
 	display: block;
 
+	-webkit-appearance: none;
 	appearance: none;
 
 	background-color: var(--light);
