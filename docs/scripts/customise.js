@@ -349,15 +349,11 @@ function exportIcons() {
 	});
 }
 
-alert("test 1");
-
 { // theme setting options
 	function setTheme(newTheme) {
 		document.documentElement.className = "theme-" + newTheme;
 		currentTheme = newTheme;
-		alert("test 4");
 		render();
-		alert("test 5");
 	}
 
 	setTheme(preferredTheme);
@@ -365,23 +361,17 @@ alert("test 1");
 	let themeOptions = document.querySelectorAll("input[name=theme][type=radio]");
 
 	function updateThemeFromOptions() {
-		alert("test 6 WITH TRY");
-		try {
-			let themeOptions = document.querySelectorAll("input[name=theme][type=radio]");
-			alert("theme options " + themeOptions);
-			let newTheme;
-			for(let themeOption of themeOptions) {
-				if(themeOption.checked) {
-					newTheme = themeOption.value;
-				}
+		// for some reason, safari wants this here                      ^
+		// it throws a fit otherwise, even though it's defined up there |
+		let themeOptions = document.querySelectorAll("input[name=theme][type=radio]");
+		let newTheme;
+		for(let themeOption of themeOptions) {
+			if(themeOption.checked) {
+				newTheme = themeOption.value;
 			}
-		} catch(e) {
-			alert("error " + e);
 		}
-		alert("test 7");
 		console.log("Changing theme to " + newTheme);
 		if(newTheme != currentTheme) {
-			alert("test 8");
 			setTheme(newTheme);
 		}
 	}
@@ -394,8 +384,6 @@ alert("test 1");
 	}
 }
 
-alert("test 2");
-
 { // style setting options
 	function setStyle(newStyle) {
 		currentStyle = newStyle;
@@ -407,6 +395,8 @@ alert("test 2");
 	let styleOptions = document.querySelectorAll("input[name=style][type=radio]");
 
 	function updateStyleFromOptions() {
+		// for some reason, safari wants this here                      ^
+		// it throws a fit otherwise, even though it's defined up there |
 		let styleOptions = document.querySelectorAll("input[name=style][type=radio]");
 		let newStyle;
 		for(let styleOption of styleOptions) {
@@ -441,7 +431,5 @@ alert("test 2");
 
 	window.addEventListener('resize', updateCanvasSize);
 }
-
-alert("test 3");
 
 loadIconSetImage();
