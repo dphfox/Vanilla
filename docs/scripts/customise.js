@@ -414,8 +414,9 @@ function exportIcons() {
 
 {
 	function updateCanvasSize() {
-		previewCanvasContext.canvas.width = previewCanvasContext.canvas.clientWidth;
-		previewCanvasContext.canvas.height = previewCanvasContext.canvas.clientHeight;
+		let dpi = window.devicePixelRatio;
+		previewCanvasContext.canvas.width = previewCanvasContext.canvas.clientWidth * dpi;
+		previewCanvasContext.canvas.height = previewCanvasContext.canvas.clientHeight * dpi;
 
 		render();
 	}
