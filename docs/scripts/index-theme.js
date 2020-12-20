@@ -1,4 +1,5 @@
 let gallery = document.querySelector("#icon-gallery");
+
 function updateTheme(isDark) {
 	document.documentElement.className = "theme-" + (isDark ? "graphite" : "platinum");
 	gallery.src = "/Vanilla/assets/index/icons-" + (isDark ? "dark" : "light") + ".svg";
