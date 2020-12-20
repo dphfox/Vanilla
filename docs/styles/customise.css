@@ -61,10 +61,10 @@ body {
 	width: 3rem;
 	height: 3rem;
 	border: 0.25rem solid var(--accent);
-	border-top: none;
+	border-top-color: transparent;
 
 	border-radius: 100%;
-	
+
 	animation: loaderspin 0.75s linear 0s infinite;
 }
 
