@@ -221,7 +221,6 @@ fieldset > label {
 
 input[type=radio] {
 	margin-right: 0.5rem;
-	appearance: none;
 
 	position: relative;
 	width: 0.875rem;
