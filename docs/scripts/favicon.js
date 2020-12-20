@@ -1,7 +1,7 @@
 let favicon = document.querySelector("#favicon");
 
 function updateFavicon(isDark) {
-	favicon.href = "/assets/favicon-" + (isDark ? "dark" : "light") + ".png";
+	favicon.href = "/Vanilla/assets/favicon-" + (isDark ? "dark" : "light") + ".png";
 }
 
 if(window.matchMedia != null) {
