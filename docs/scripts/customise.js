@@ -367,6 +367,7 @@ alert("test 1");
 	function updateThemeFromOptions() {
 		alert("test 6 WITH TRY");
 		try {
+			let themeOptions = document.querySelectorAll("input[name=theme][type=radio]");
 			let newTheme;
 			for(let themeOption of themeOptions) {
 				if(themeOption.checked) {
@@ -405,6 +406,7 @@ alert("test 2");
 	let styleOptions = document.querySelectorAll("input[name=style][type=radio]");
 
 	function updateStyleFromOptions() {
+		let styleOptions = document.querySelectorAll("input[name=style][type=radio]");
 		let newStyle;
 		for(let styleOption of styleOptions) {
 			if(styleOption.checked) {
