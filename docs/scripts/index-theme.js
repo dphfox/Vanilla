@@ -11,6 +11,5 @@ if(window.matchMedia != null) {
 	updateTheme(themeMedia.matches);
 
 	themeMedia.addListener(media => {updateTheme(media.matches);});
+	window.addEventListener("DOMContentLoaded", () => updateTheme(media.matches));
 }
-
-window.addEventListener("DOMContentLoaded", () => updateTheme(media.matches));
