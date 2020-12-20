@@ -1,6 +1,7 @@
+let gallery = document.querySelector("#icon-gallery");
 function updateTheme(isDark) {
 	document.documentElement.className = "theme-" + (isDark ? "graphite" : "platinum");
-	document.querySelector(".icon-gallery").src = "/Vanilla/assets/index/icons-" + (isDark ? "dark" : "light") + ".svg";
+	gallery.src = "/Vanilla/assets/index/icons-" + (isDark ? "dark" : "light") + ".svg";
 }
 
 if(window.matchMedia != null) {
