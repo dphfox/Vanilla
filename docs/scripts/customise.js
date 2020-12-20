@@ -365,7 +365,7 @@ alert("test 1");
 	let themeOptions = document.querySelectorAll("input[name=theme][type=radio]");
 
 	function updateThemeFromOptions() {
-		alert("test 6");
+		alert("test 6 WITH TRY");
 		try {
 			let newTheme;
 			for(let themeOption of themeOptions) {
