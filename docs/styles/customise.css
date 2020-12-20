@@ -229,6 +229,8 @@ input[type=radio] {
 
 	display: block;
 
+	appearance: none;
+
 	background-color: var(--light);
 	border-radius: 50%;
 
