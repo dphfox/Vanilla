@@ -1,5 +1,6 @@
 # Vanilla
 Smooth, simplified icons for Studio.
+
 See the website here:
 https://elttob.github.io/Vanilla
 
