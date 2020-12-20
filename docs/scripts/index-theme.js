@@ -11,5 +11,8 @@ if(window.matchMedia != null) {
 	updateTheme(themeMedia.matches);
 
 	themeMedia.addListener(media => {updateTheme(media.matches);});
-	window.addEventListener("DOMContentLoaded", () => updateTheme(media.matches));
+	window.addEventListener("DOMContentLoaded", () => {
+		let themeMedia = window.matchMedia('(prefers-color-scheme: dark)');
+		updateTheme(themeMedia.matches);
+	});
 }
