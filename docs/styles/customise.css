@@ -63,6 +63,8 @@ body {
 	border: 0.25rem solid var(--accent);
 	border-top: none;
 
+	border-radius: 100%;
+	
 	animation: loaderspin 0.75s linear 0s infinite;
 }
 
