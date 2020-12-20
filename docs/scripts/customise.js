@@ -366,11 +366,15 @@ alert("test 1");
 
 	function updateThemeFromOptions() {
 		alert("test 6");
-		let newTheme;
-		for(let themeOption of themeOptions) {
-			if(themeOption.checked) {
-				newTheme = themeOption.value;
+		try {
+			let newTheme;
+			for(let themeOption of themeOptions) {
+				if(themeOption.checked) {
+					newTheme = themeOption.value;
+				}
 			}
+		} catch(e) {
+			alert("error " + e);
 		}
 		alert("test 7");
 		console.log("Changing theme to " + newTheme);
