@@ -72,6 +72,7 @@ function loadIconSetImage() {
 		iconSetSize = Math.floor(iconsetImage.width / ICON_SIZE_PX);
 		console.log("Icon set contains " + iconSetSize + " icons");
 
+		document.querySelector("#page-loading").className = "done";
 		iconsetIsLoaded = true;
 
 		recomputePreviewGridSize();

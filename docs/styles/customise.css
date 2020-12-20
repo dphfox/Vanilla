@@ -32,6 +32,44 @@ body {
 	}
 }
 
+@keyframes loaderspin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+#page-loading {
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+
+	background-color: var(--main-background);
+}
+
+#page-loading::after {
+	content: "";
+	position: fixed;
+	z-index: 10000;
+	top: 50%;
+	left: 50%;
+	width: 3rem;
+	height: 3rem;
+	border: 0.25rem solid var(--accent);
+	border-top: none;
+
+	animation: loaderspin 0.75s linear 0s infinite;
+}
+
+#page-loading.done {
+	display: none;
+}
+
 #preview {
 	grid-area: preview;
 	width: 100%;
