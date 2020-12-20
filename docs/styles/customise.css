@@ -232,6 +232,9 @@ input[type=radio] {
 	-webkit-appearance: none;
 	appearance: none;
 
+	border: none;
+	outline: none;
+
 	background-color: var(--light);
 	border-radius: 50%;
 
