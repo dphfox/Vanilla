@@ -33,6 +33,8 @@ const ICON_COLOURS = {
 	},
 };
 
+const VERSION = "1.1";
+
 const INPUT_ICON_COLOURS = ICON_COLOURS.platinum;
 
 const ICONSET_URL = "/Vanilla/iconset/iconset.svg";
@@ -305,7 +307,7 @@ function render() {
 
 let exportIconBlobContext = document.createElement("canvas").getContext("2d");
 let exportDownloadLink = document.createElement("a");
-exportDownloadLink.download = "VanillaIcons.zip";
+exportDownloadLink.download = "VanillaIcons-" + VERSION + ".zip";
 
 function exportIcons() {
 	showModalDialog('preparing-download');
