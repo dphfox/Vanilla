@@ -187,4 +187,5 @@ async function init() {
 
 init().catch((e) => {
 	alert("Error during customiser initialisation:\n" + e)
+	console.error(e);
 })
