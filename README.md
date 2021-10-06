@@ -1,14 +1,14 @@
-<center>
-	<h2>
-		Vanilla
-	</h2>
-	<h3>
-		v2.0
-	</h3>
+<h2 align="center">
+	Vanilla
+</h2>
+<h3 align="center">
+	v2.0
+</h3>
+<p align="center">
 	Smooth, simplified icons for Roblox Studio.
 	<br>
 	<a href="https://elttob.github.io/Vanilla">Customise your icon set →</a>
-</center>
+</p>
 
 -----
 
