@@ -2,7 +2,7 @@
 // MIT License (c) Elttob 2021
 
 // Instead of using relative URLs, we're using absolute URLs for portability.
-const BASE_URL = "https://elttob.github.io/Vanilla-Dev/icons/"
+const BASE_URL = "https://elttob.github.io/Vanilla/icons/"
 // The size of icons on the icon sheet, in pixels
 const ICON_SIZE = 16
 
@@ -25,7 +25,7 @@ export function renderIcon(destination, iconId, x, y, size, colour = {r: 255, g:
 	if(!isLoaded) {
 		throw new Error("Vanilla icon renderer is not initialised")
 	}
-	
+
 	renderTemporaryCanvas.width = size
 	renderTemporaryCanvas.height = size
 
@@ -36,7 +36,7 @@ export function renderIcon(destination, iconId, x, y, size, colour = {r: 255, g:
 		// source rectangle
 		iconId * ICON_SIZE, 0,
 		ICON_SIZE, ICON_SIZE,
-		
+
 		// destination rectangle
 		0, 0,
 		size, size)
