@@ -1,0 +1,672 @@
+[
+	{
+		"icon": 0,
+		"name": "Instance",
+		"colour": "blue"
+	},
+	{
+		"icon": 1,
+		"name": "Part",
+		"colour": "grey"
+	},
+	{
+		"icon": 2,
+		"name": "Model",
+		"colour": "red"
+	},
+	{
+		"icon": 3,
+		"name": "(unused)",
+		"colour": "grey"
+	},
+	{
+		"icon": 4,
+		"name": "ValueBase",
+		"colour": "grey"
+	},
+	{
+		"icon": 5,
+		"name": "Camera",
+		"colour": "grey"
+	},
+	{
+		"icon": 6,
+		"name": "Script",
+		"colour": "green"
+	},
+	{
+		"icon": 7,
+		"name": "Decal",
+		"colour": "green"
+	},
+	{
+		"icon": 8,
+		"name": "SpecialMesh",
+		"colour": "purple"
+	},
+	{
+		"icon": 9,
+		"name": "Humanoicon",
+		"colour": "yellow"
+	},
+	{
+		"icon": 10,
+		"name": "Texture",
+		"colour": "yellow"
+	},
+	{
+		"icon": 11,
+		"name": "Sound",
+		"colour": "red"
+	},
+	{
+		"icon": 12,
+		"name": "Player",
+		"colour": "blue"
+	},
+	{
+		"icon": 13,
+		"name": "Lighting",
+		"colour": "yellow"
+	},
+	{
+		"icon": 14,
+		"name": "BodyMover",
+		"colour": "blue"
+	},
+	{
+		"icon": 15,
+		"name": "NetworkServer",
+		"colour": "green"
+	},
+	{
+		"icon": 16,
+		"name": "NetworkClient",
+		"colour": "blue"
+	},
+	{
+		"icon": 17,
+		"name": "Tool",
+		"colour": "yellow"
+	},
+	{
+		"icon": 18,
+		"name": "LocalScript",
+		"colour": "blue"
+	},
+	{
+		"icon": 19,
+		"name": "Workspace",
+		"colour": "green"
+	},
+	{
+		"icon": 20,
+		"name": "Backpack",
+		"colour": "yellow"
+	},
+	{
+		"icon": 21,
+		"name": "Players",
+		"colour": "blue"
+	},
+	{
+		"icon": 22,
+		"name": "HopperBin",
+		"colour": "blue"
+	},
+	{
+		"icon": 23,
+		"name": "Teams",
+		"colour": "red"
+	},
+	{
+		"icon": 24,
+		"name": "Team",
+		"colour": "red"
+	},
+	{
+		"icon": 25,
+		"name": "SpawnLocation",
+		"colour": "blue"
+	},
+	{
+		"icon": 26,
+		"name": "UIComponent",
+		"colour": "grey"
+	},
+	{
+		"icon": 27,
+		"name": "(unused)",
+		"colour": "blue"
+	},
+	{
+		"icon": 28,
+		"name": "Sky",
+		"colour": "blue"
+	},
+	{
+		"icon": 29,
+		"name": "NetworkReplicator",
+		"colour": "blue"
+	},
+	{
+		"icon": 30,
+		"name": "Debris",
+		"colour": "purple"
+	},
+	{
+		"icon": 31,
+		"name": "SoundService",
+		"colour": "grey"
+	},
+	{
+		"icon": 32,
+		"name": "Accessory",
+		"colour": "purple"
+	},
+	{
+		"icon": 33,
+		"name": "ChatService",
+		"colour": "blue"
+	},
+	{
+		"icon": 34,
+		"name": "Joint",
+		"colour": "blue"
+	},
+	{
+		"icon": 35,
+		"name": "Seat",
+		"colour": "red"
+	},
+	{
+		"icon": 36,
+		"name": "Explosion",
+		"colour": "yellow"
+	},
+	{
+		"icon": 37,
+		"name": "ForceField",
+		"colour": "green"
+	},
+	{
+		"icon": 38,
+		"name": "Flag",
+		"colour": "blue"
+	},
+	{
+		"icon": 39,
+		"name": "FlagStand",
+		"colour": "blue"
+	},
+	{
+		"icon": 40,
+		"name": "ShirtGraphic",
+		"colour": "purple"
+	},
+	{
+		"icon": 41,
+		"name": "ClickDetector",
+		"colour": "blue"
+	},
+	{
+		"icon": 42,
+		"name": "Sparkles",
+		"colour": "purple"
+	},
+	{
+		"icon": 43,
+		"name": "Shirt",
+		"colour": "purple"
+	},
+	{
+		"icon": 44,
+		"name": "Pants",
+		"colour": "purple"
+	},
+	{
+		"icon": 45,
+		"name": "Hat",
+		"colour": "purple"
+	},
+	{
+		"icon": 46,
+		"name": "StarterGui",
+		"colour": "blue"
+	},
+	{
+		"icon": 47,
+		"name": "ScreenGui",
+		"colour": "blue"
+	},
+	{
+		"icon": 48,
+		"name": "Frame",
+		"colour": "yellow"
+	},
+	{
+		"icon": 49,
+		"name": "ImageLabel",
+		"colour": "green"
+	},
+	{
+		"icon": 50,
+		"name": "TextLabel",
+		"colour": "blue"
+	},
+	{
+		"icon": 51,
+		"name": "TextButton",
+		"colour": "blue"
+	},
+	{
+		"icon": 52,
+		"name": "ImageButton",
+		"colour": "green"
+	},
+	{
+		"icon": 53,
+		"name": "Handles",
+		"colour": "blue"
+	},
+	{
+		"icon": 54,
+		"name": "SelectionBox",
+		"colour": "blue"
+	},
+	{
+		"icon": 55,
+		"name": "SurfaceSelection",
+		"colour": "yellow"
+	},
+	{
+		"icon": 56,
+		"name": "ArcHandles",
+		"colour": "blue"
+	},
+	{
+		"icon": 57,
+		"name": "SelectionLasso",
+		"colour": "red"
+	},
+	{
+		"icon": 58,
+		"name": "Configuration",
+		"colour": "grey"
+	},
+	{
+		"icon": 59,
+		"name": "Smoke",
+		"colour": "grey"
+	},
+	{
+		"icon": 60,
+		"name": "Animation",
+		"colour": "grey"
+	},
+	{
+		"icon": 61,
+		"name": "Fire",
+		"colour": "red"
+	},
+	{
+		"icon": 62,
+		"name": "Dialog",
+		"colour": "blue"
+	},
+	{
+		"icon": 63,
+		"name": "DialogChoice",
+		"colour": "blue"
+	},
+	{
+		"icon": 64,
+		"name": "BillboardGui",
+		"colour": "red"
+	},
+	{
+		"icon": 65,
+		"name": "Terrain",
+		"colour": "green"
+	},
+	{
+		"icon": 66,
+		"name": "BindableFunction",
+		"colour": "purple"
+	},
+	{
+		"icon": 67,
+		"name": "BindableEvent",
+		"colour": "yellow"
+	},
+	{
+		"icon": 68,
+		"name": "TestService",
+		"colour": "green"
+	},
+	{
+		"icon": 69,
+		"name": "ServerStorage",
+		"colour": "green"
+	},
+	{
+		"icon": 70,
+		"name": "ReplicatedStorage",
+		"colour": "red"
+	},
+	{
+		"icon": 71,
+		"name": "ServerScriptService",
+		"colour": "green"
+	},
+	{
+		"icon": 72,
+		"name": "NegateOperation",
+		"colour": "red"
+	},
+	{
+		"icon": 73,
+		"name": "MeshPart",
+		"colour": "purple"
+	},
+	{
+		"icon": 74,
+		"name": "RemoteFunction",
+		"colour": "purple"
+	},
+	{
+		"icon": 75,
+		"name": "RemoteEvent",
+		"colour": "yellow"
+	},
+	{
+		"icon": 76,
+		"name": "ModuleScript",
+		"colour": "red"
+	},
+	{
+		"icon": 77,
+		"name": "Folder",
+		"colour": "yellow"
+	},
+	{
+		"icon": 78,
+		"name": "PlayerScripts",
+		"colour": "blue"
+	},
+	{
+		"icon": 79,
+		"name": "StarterPlayer",
+		"colour": "blue"
+	},
+	{
+		"icon": 80,
+		"name": "ParticleEmitter",
+		"colour": "blue"
+	},
+	{
+		"icon": 81,
+		"name": "Attachment",
+		"colour": "blue"
+	},
+	{
+		"icon": 82,
+		"name": "(unused)",
+		"colour": "green"
+	},
+	{
+		"icon": 83,
+		"name": "PostEffect",
+		"colour": "grey"
+	},
+	{
+		"icon": 84,
+		"name": "SoundEffect",
+		"colour": "purple"
+	},
+	{
+		"icon": 85,
+		"name": "SoundGroup",
+		"colour": "yellow"
+	},
+	{
+		"icon": 86,
+		"name": "BallSocketConstraint",
+		"colour": "green"
+	},
+	{
+		"icon": 87,
+		"name": "HingeConstraint",
+		"colour": "green"
+	},
+	{
+		"icon": 88,
+		"name": "PrismaticConstraint",
+		"colour": "green"
+	},
+	{
+		"icon": 89,
+		"name": "RopeConstraint",
+		"colour": "green"
+	},
+	{
+		"icon": 90,
+		"name": "RodConstraint",
+		"colour": "green"
+	},
+	{
+		"icon": 91,
+		"name": "SpringConstraint",
+		"colour": "green"
+	},
+	{
+		"icon": 92,
+		"name": "LocalizationService",
+		"colour": "blue"
+	},
+	{
+		"icon": 93,
+		"name": "Trail",
+		"colour": "yellow"
+	},
+	{
+		"icon": 94,
+		"name": "WeldConstraint",
+		"colour": "blue"
+	},
+	{
+		"icon": 95,
+		"name": "CylindricalConstraint",
+		"colour": "green"
+	},
+	{
+		"icon": 96,
+		"name": "Beam",
+		"colour": "yellow"
+	},
+	{
+		"icon": 97,
+		"name": "LocalizationTable",
+		"colour": "grey"
+	},
+	{
+		"icon": 98,
+		"name": "PackageLink",
+		"colour": "grey"
+	},
+	{
+		"icon": 99,
+		"name": "AlignPosition",
+		"colour": "red"
+	},
+	{
+		"icon": 100,
+		"name": "AlignOrientation",
+		"colour": "red"
+	},
+	{
+		"icon": 101,
+		"name": "LineForce",
+		"colour": "blue"
+	},
+	{
+		"icon": 102,
+		"name": "VectorForce",
+		"colour": "blue"
+	},
+	{
+		"icon": 103,
+		"name": "Torque",
+		"colour": "blue"
+	},
+	{
+		"icon": 104,
+		"name": "HumanoiconDescription",
+		"colour": "yellow"
+	},
+	{
+		"icon": 105,
+		"name": "NoColliconeConstraint",
+		"colour": "red"
+	},
+	{
+		"icon": 106,
+		"name": "Motor6D",
+		"colour": "purple"
+	},
+	{
+		"icon": 107,
+		"name": "LineHandleAdornment",
+		"colour": "purple"
+	},
+	{
+		"icon": 108,
+		"name": "ImageHandleAdornment",
+		"colour": "purple"
+	},
+	{
+		"icon": 109,
+		"name": "CylinderHandleAdornment",
+		"colour": "purple"
+	},
+	{
+		"icon": 110,
+		"name": "ConeHandleAdornment",
+		"colour": "purple"
+	},
+	{
+		"icon": 111,
+		"name": "BoxHandleAdornment",
+		"colour": "purple"
+	},
+	{
+		"icon": 112,
+		"name": "SphereHandleAdornment",
+		"colour": "purple"
+	},
+	{
+		"icon": 113,
+		"name": "Actor",
+		"colour": "blue"
+	},
+	{
+		"icon": 114,
+		"name": "Bone",
+		"colour": "purple"
+	},
+	{
+		"icon": 115,
+		"name": "(unused)",
+		"colour": "purple"
+	},
+	{
+		"icon": 116,
+		"name": "(unused)",
+		"colour": "purple"
+	},
+	{
+		"icon": 117,
+		"name": "(unused)",
+		"colour": "grey"
+	},
+	{
+		"icon": 118,
+		"name": "(unused)",
+		"colour": "grey"
+	},
+	{
+		"icon": 119,
+		"name": "(unused)",
+		"colour": "grey"
+	},
+	{
+		"icon": 120,
+		"name": "VideoFrame",
+		"colour": "blue"
+	},
+	{
+		"icon": 121,
+		"name": "WrapLayer",
+		"colour": "blue"
+	},
+	{
+		"icon": 122,
+		"name": "WrapTarget",
+		"colour": "purple"
+	},
+	{
+		"icon": 123,
+		"name": "UniversalConstraint",
+		"colour": "green"
+	},
+	{
+		"icon": 124,
+		"name": "ProximityPrompt",
+		"colour": "blue"
+	},
+	{
+		"icon": 125,
+		"name": "TorsionSpingConstraint",
+		"colour": "green"
+	},
+	{
+		"icon": 126,
+		"name": "WrapLayer (alt)",
+		"colour": "blue"
+	},
+	{
+		"icon": 127,
+		"name": "WrapTarget (alt)",
+		"colour": "purple"
+	},
+	{
+		"icon": 128,
+		"name": "PathfindingModifier",
+		"colour": "green"
+	},
+	{
+		"icon": 129,
+		"name": "FaceControls",
+		"colour": "blue"
+	},
+	{
+		"icon": 130,
+		"name": "MaterialsService",
+		"colour": "blue"
+	},
+	{
+		"icon": 131,
+		"name": "MaterialVariant",
+		"colour": "yellow"
+	},
+	{
+		"icon": 132,
+		"name": "LinearVelocity",
+		"colour": "blue"
+	},
+	{
+		"icon": 133,
+		"name": "Highlight",
+		"colour": "yellow"
+	}
+]

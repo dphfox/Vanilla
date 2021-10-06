@@ -64,12 +64,12 @@ main {
 	content: "";
 	position: fixed;
 	z-index: 10000;
-	top: calc(50% - 1.5rem);
-	left: calc(50% - 1.5rem);
-	width: 3rem;
-	height: 3rem;
-	border: 0.25rem solid var(--accent);
-	border-top-color: transparent;
+	top: calc(50% - 1rem);
+	left: calc(50% - 1rem);
+	width: 2rem;
+	height: 2rem;
+	border: 0.25rem solid var(--midlight);
+	border-top-color: var(--accent);
 
 	border-radius: 100%;
 

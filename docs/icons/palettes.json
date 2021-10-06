@@ -1,0 +1,48 @@
+{
+	"defaults": {
+		"light": "platinum",
+		"dark": "graphite"
+	},
+
+	"palettes": [
+		{
+			"id": "platinum",
+			"title": "Platinum (light)",
+			"page_colours": "platinum",
+			"colours": {
+				"red": "BF4040",
+				"yellow": "D68D1F",
+				"green": "169C44",
+				"blue": "006FB2",
+				"purple": "AF38CD",
+				"grey": "3F3F3F"
+			}
+		},
+		{
+			"id": "graphite",
+			"title": "Graphite (dark)",
+			"page_colours": "graphite",
+			"colours": {
+				"red": "FF6666",
+				"yellow": "FFBC57",
+				"green": "26D964",
+				"blue": "4CBCFF",
+				"purple": "E066FF",
+				"grey": "EBEBEB"
+			}
+		},
+		{
+			"id": "white",
+			"title": "White (transparency only)",
+			"page_colours": "graphite",
+			"colours": {
+				"red": "FFFFFF",
+				"yellow": "FFFFFF",
+				"green": "FFFFFF",
+				"blue": "FFFFFF",
+				"purple": "FFFFFF",
+				"grey": "FFFFFF"
+			}
+		}
+	]
+}

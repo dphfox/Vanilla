@@ -10,35 +10,43 @@
 	<link id="favicon" rel="icon" type="image/png" href="/Vanilla/assets/favicon-light.png">
 
 	<script src="/Vanilla/scripts/favicon.js"></script>
-	<script src="/Vanilla/scripts/customise-early.js"></script>
-	<script src="/Vanilla/scripts/libs/jszip.min.js"></script>
 
 	<script src="/Vanilla/scripts/footer.js" defer></script>
-	<script src="/Vanilla/scripts/customise.js" defer></script>
 	<script src="/Vanilla/scripts/dialogs.js" defer></script>
+
+	<script src="/Vanilla/scripts/libs/jszip.min.js"></script>
+	<script src="/Vanilla/scripts/customiser/page-early.js" type="module"></script>
+	<script src="/Vanilla/scripts/customiser/page-main.js" type="module" defer></script>
 </head>
 <body>
 	<div id="page-loading"></div>
-	
+
 	<main>
 		<section class="main-section">
-			<h1>Step 1: Choose your theme</h1>
-			<p>Vanilla uses an alternate palette for dark theme which improves contrast.</p>
+			<h1>Step 1: Choose your colours</h1>
+			<p>Vanilla offers different colours for dark theme to improve contrast.</p>
 
-			<fieldset id="theme-options">
-				<label><input type="radio" name="theme" value="platinum" checked>Platinum (light)</label>
-				<label><input type="radio" name="theme" value="graphite"        >Graphite (dark) </label>
-			</fieldset>
+			<fieldset id="palette-options"></fieldset>
 
 			<h1>Step 2: Choose your style</h1>
-			<p>You can add colours for easier navigation or use a single colour for a cleaner look.</p>
+			<p>You can use multiple colours for easier navigation or use a single colour for a cleaner look.</p>
 
 			<fieldset id="style-options">
 				<label><input type="radio" name="style" value="colourful" checked>Colourful</label>
 				<label><input type="radio" name="style" value="mono"             >Mono     </label>
 			</fieldset>
 
-			<h1>Step 3: Download your icon set</h1>
+			<h1>Step 3: Choose your resolution</h1>
+			<p>If you're using Vanilla icons for videos or tutorials, you can get higher resolution versions.</p>
+
+			<fieldset id="resolution-options">
+				<label><input type="radio" name="resolution" value="16" checked>16 px (works with Studio)</label>
+				<label><input type="radio" name="resolution" value="64"        >64 px</label>
+				<label><input type="radio" name="resolution" value="256"       >256 px (no ClassImages.png)</label>
+				<label><input type="radio" name="resolution" value="1024"      >1024 px (no ClassImages.png)</label>
+			</fieldset>
+
+			<h1>Step 4: Download your icon set</h1>
 
 			<a class="primary-button" href="#" onclick="showModalDialog('donate');">Download icon set .zip</a>
 			<a class="secondary-button" href="#" onclick="showModalDialog('how-to-install');">How to install</a>
@@ -76,7 +84,7 @@
 		<p><small><a target="_blank" href="https://creativecommons.org/licenses/by-nc/4.0/legalcode">(these examples aren't a replacement for the legal text - they're for informational purposes only! I'm not a lawyer.)</a></small></p>
 
 		<h1>Negotiation of terms</h1>
-		
+
 		<p>If you want to use the icons, but these terms don't work for you (e.g. for commercial use),
 			<a target="_blank" href="https://twitter.com/rbxe_">feel free to get in touch on Twitter</a> - I'm happy to help you out!</p>
 
@@ -85,24 +93,31 @@
 
 	<div class="dialog" id="donate">
 		<h1>Thank you :)</h1>
-		
+
 		<p>
 			Thanks for using the Vanilla icon set! It took a ton of time and effort to develop its visual style and create each one of the hundreds of icons in
 			the set.
 		</p>
 
 		<p style="padding-bottom: 1px;">
-			Would you like to donate anything before downloading? As an independent designer and software developer, 
+			Would you like to donate anything before downloading? As an independent designer and software developer,
 			any amount you're willing to give is hugely appreciated <3
 		</p>
 
 		<a class="primary-button" href="https://buymeacoff.ee/elttob" target="_blank" onclick="document.querySelector('#donate-finish-download').innerText='Finish download';">Donate</a>
-		<a id="donate-finish-download" class="secondary-button" href="#" onclick="exportIcons();">Ignore and finish download</a>
+		<a id="export-button" class="secondary-button">Ignore and finish download</a>
 	</div>
 
 	<div class="dialog" id="preparing-download">
 		<h1>Preparing your download...</h1>
-		<p>This might take a short while - we're generating the files on your local computer.</p>
+		<p style="padding-bottom: 1px;">This might take a short while - we're generating the files on your local computer.</p>
+	</div>
+
+	<div class="dialog" id="download-ready">
+		<h1>Your download is ready</h1>
+		<p style="padding-bottom: 1px;">If it doesn't start automatically, <a id="export-download-link" download="VanillaIcons.zip">click here to download manually.</a></p>
+		<a class="primary-button" onclick="showModalDialog('how-to-install')">How to install</a>
+		<a class="secondary-button" onclick="showModalDialog(null)">Close</a>
 	</div>
 
 	<div class="dialog" id="how-to-install">
@@ -116,24 +131,13 @@
 
 		<h1>Installing your icon set manually</h1>
 		<ul>
-			<li>Find your Roblox versions folder (e.g. on Windows, this is %LocalAppData%\Roblox\versions)</li>
-			<li>Go into the latest folder (with the most recent date modified!)</li>
-			<li>From there, go into the \content\textures folder</li>
+			<li>Find your Roblox folder (e.g. on Windows, this is %AppData%/Local/Roblox/)</li>
+			<li>Go into /Versions/, then go into the latest version folder (check date modified!)</li>
+			<li>Navigate to the /content/textures/ folder</li>
 			<li>Drop in the 'ClassImages.png' image that came with your download.</li>
 		</ul>
 
-		<p>Something to note: if you're installing manually, you'll have to redo this after every Roblox update.</p>
-
-		<h1>Other installation methods</h1>
-
-		<p>
-			Other members of the community have created their own installers for Vanilla! While these aren't official,
-			you may find them much easier to use.
-		</p>
-
-		<ul style="padding-bottom: 1px;">
-			<li>LordMerc's <a target="_blank" href="https://github.com/DamnMerc/Vanilla-Updater">Vanilla-Updater</a> (Windows only)</li>
-		</ul>
+		<p style="padding-bottom: 1px;">Something to note: if you're installing manually, you'll have to redo this after every Roblox update.</p>
 
 		<a class="primary-button" href="#" onclick="showModalDialog(null);">OK</a>
 	</div>

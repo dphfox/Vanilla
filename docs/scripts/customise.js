@@ -33,12 +33,11 @@ const ICON_COLOURS = {
 	},
 };
 
-const VERSION = "1.1";
-
 const INPUT_ICON_COLOURS = ICON_COLOURS.platinum;
 
-const ICONSET_URL = "/Vanilla/iconset/iconset.svg";
+const ICONSET_URL = "/Vanilla-Dev/icons/icons.svg";
 const ICON_SIZE_PX = 16;
+const EXPORT_SIZE_PX = 16;
 const PREVIEW_ICON_PADDING = 4;
 
 let iconsetImage;
@@ -240,8 +239,8 @@ function renderPreviewBuffer(previewLayout) {
 function renderExportBuffer() {
 	console.log("Re-rendering export buffer");
 
-	exportBufferContext.canvas.width = iconSetSize * ICON_SIZE_PX;
-	exportBufferContext.canvas.height = ICON_SIZE_PX;
+	exportBufferContext.canvas.width = iconSetSize * EXPORT_SIZE_PX;
+	exportBufferContext.canvas.height = EXPORT_SIZE_PX;
 
 	exportBufferContext.save();
 
@@ -251,11 +250,11 @@ function renderExportBuffer() {
 
 		// step 1: render icons into buffer
 
-		exportBufferContext.drawImage(iconsetImage, 0, 0);
+		exportBufferContext.drawImage(iconsetImage, 0, 0, iconSetSize * EXPORT_SIZE_PX, EXPORT_SIZE_PX);
 
 		// step 2: colourise all icons
 
-		colouriseBuffer(exportBufferContext, ICON_SIZE_PX, iconSetSize, ICON_SIZE_PX);
+		colouriseBuffer(exportBufferContext, EXPORT_SIZE_PX, iconSetSize, EXPORT_SIZE_PX);
 	} finally {
 		exportBufferContext.restore();
 	}
@@ -307,7 +306,7 @@ function render() {
 
 let exportIconBlobContext = document.createElement("canvas").getContext("2d");
 let exportDownloadLink = document.createElement("a");
-exportDownloadLink.download = "VanillaIcons-" + VERSION + ".zip";
+exportDownloadLink.download = "VanillaIcons.zip";
 
 function exportIcons() {
 	showModalDialog('preparing-download');
@@ -315,14 +314,14 @@ function exportIcons() {
 
 	let iconPromises = [];
 	
-	exportIconBlobContext.canvas.width = ICON_SIZE_PX;
-	exportIconBlobContext.canvas.height = ICON_SIZE_PX;
+	exportIconBlobContext.canvas.width = EXPORT_SIZE_PX;
+	exportIconBlobContext.canvas.height = EXPORT_SIZE_PX;
 
 	for(let iconIndex = 0; iconIndex < iconSetSize; iconIndex++) {
 		exportIconBlobContext.save();
 		try {
-			exportIconBlobContext.clearRect(0, 0, ICON_SIZE_PX, ICON_SIZE_PX);
-			exportIconBlobContext.drawImage(exportBufferContext.canvas, iconIndex * ICON_SIZE_PX, 0, ICON_SIZE_PX, ICON_SIZE_PX, 0, 0, ICON_SIZE_PX, ICON_SIZE_PX);
+			exportIconBlobContext.clearRect(0, 0, EXPORT_SIZE_PX, EXPORT_SIZE_PX);
+			exportIconBlobContext.drawImage(exportBufferContext.canvas, iconIndex * EXPORT_SIZE_PX, 0, EXPORT_SIZE_PX, EXPORT_SIZE_PX, 0, 0, EXPORT_SIZE_PX, EXPORT_SIZE_PX);
 			iconPromises[iconIndex] = new Promise((resolve, reject) => exportIconBlobContext.canvas.toBlob(resolve));
 		} finally {
 			exportIconBlobContext.restore();
