@@ -487,12 +487,12 @@
 	{
 		"icon": 97,
 		"name": "LocalizationTable",
-		"colour": "grey"
+		"colour": "green"
 	},
 	{
 		"icon": 98,
 		"name": "PackageLink",
-		"colour": "grey"
+		"colour": "yellow"
 	},
 	{
 		"icon": 99,
@@ -587,17 +587,17 @@
 	{
 		"icon": 117,
 		"name": "(unused)",
-		"colour": "grey"
+		"colour": "purple"
 	},
 	{
 		"icon": 118,
 		"name": "(unused)",
-		"colour": "grey"
+		"colour": "purple"
 	},
 	{
 		"icon": 119,
 		"name": "(unused)",
-		"colour": "grey"
+		"colour": "purple"
 	},
 	{
 		"icon": 120,
@@ -651,13 +651,13 @@
 	},
 	{
 		"icon": 130,
-		"name": "MaterialsService",
-		"colour": "blue"
+		"name": "MaterialVariant",
+		"colour": "yellow"
 	},
 	{
 		"icon": 131,
-		"name": "MaterialVariant",
-		"colour": "yellow"
+		"name": "MaterialsService",
+		"colour": "blue"
 	},
 	{
 		"icon": 132,
@@ -668,5 +668,10 @@
 		"icon": 133,
 		"name": "Highlight",
 		"colour": "yellow"
+	},
+	{
+		"icon": 134,
+		"name": "PlaneConstraint",
+		"colour": "green"
 	}
 ]
