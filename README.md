@@ -2,7 +2,7 @@
 	Vanilla
 </h2>
 <h3 align="center">
-	v2.0
+	v2.1
 </h3>
 <p align="center">
 	Smooth, simplified icons for Roblox Studio.
