@@ -2,676 +2,811 @@
 	{
 		"icon": 0,
 		"name": "Instance",
+		"glyph": "square-small",
 		"colour": "blue"
 	},
 	{
 		"icon": 1,
 		"name": "Part",
+		"glyph": "cube",
 		"colour": "grey"
 	},
 	{
 		"icon": 2,
 		"name": "Model",
+		"glyph": "cubes",
 		"colour": "red"
 	},
 	{
 		"icon": 3,
 		"name": "(unused)",
+		"glyph": "table-hand-point",
 		"colour": "grey"
 	},
 	{
 		"icon": 4,
 		"name": "ValueBase",
+		"glyph": "table-hand-point-row",
 		"colour": "grey"
 	},
 	{
 		"icon": 5,
 		"name": "Camera",
+		"glyph": "camera",
 		"colour": "grey"
 	},
 	{
 		"icon": 6,
 		"name": "Script",
+		"glyph": "script",
 		"colour": "green"
 	},
 	{
 		"icon": 7,
 		"name": "Decal",
+		"glyph": "picture-square",
 		"colour": "green"
 	},
 	{
 		"icon": 8,
 		"name": "SpecialMesh",
+		"glyph": "sphere-uv",
 		"colour": "purple"
 	},
 	{
 		"icon": 9,
 		"name": "Humanoid",
+		"glyph": "person-plug",
 		"colour": "yellow"
 	},
 	{
 		"icon": 10,
 		"name": "Texture",
+		"glyph": "square-checkerboard",
 		"colour": "yellow"
 	},
 	{
 		"icon": 11,
 		"name": "Sound",
+		"glyph": "sound",
 		"colour": "red"
 	},
 	{
 		"icon": 12,
 		"name": "Player",
+		"glyph": "person",
 		"colour": "blue"
 	},
 	{
 		"icon": 13,
 		"name": "Lighting",
+		"glyph": "sun",
 		"colour": "yellow"
 	},
 	{
 		"icon": 14,
 		"name": "BodyMover",
+		"glyph": "rocket",
 		"colour": "blue"
 	},
 	{
 		"icon": 15,
 		"name": "NetworkServer",
+		"glyph": "connection-servers",
 		"colour": "green"
 	},
 	{
 		"icon": 16,
 		"name": "NetworkClient",
+		"glyph": "connection-laptop",
 		"colour": "blue"
 	},
 	{
 		"icon": 17,
 		"name": "Tool",
+		"glyph": "tool",
 		"colour": "yellow"
 	},
 	{
 		"icon": 18,
 		"name": "LocalScript",
+		"glyph": "script-person",
 		"colour": "blue"
 	},
 	{
 		"icon": 19,
 		"name": "Workspace",
+		"glyph": "globe-earth",
 		"colour": "green"
 	},
 	{
 		"icon": 20,
 		"name": "Backpack",
+		"glyph": "folder-tool",
 		"colour": "yellow"
 	},
 	{
 		"icon": 21,
 		"name": "Players",
+		"glyph": "people",
 		"colour": "blue"
 	},
 	{
 		"icon": 22,
 		"name": "HopperBin",
+		"glyph": "tool-script",
 		"colour": "blue"
 	},
 	{
 		"icon": 23,
 		"name": "Teams",
+		"glyph": "folder-flag",
 		"colour": "red"
 	},
 	{
 		"icon": 24,
 		"name": "Team",
+		"glyph": "flag",
 		"colour": "red"
 	},
 	{
 		"icon": 25,
 		"name": "SpawnLocation",
+		"glyph": "spawn-location",
 		"colour": "blue"
 	},
 	{
 		"icon": 26,
 		"name": "UIComponent",
+		"glyph": "window-cog",
 		"colour": "grey"
 	},
 	{
 		"icon": 27,
 		"name": "(unused)",
+		"glyph": "windows",
 		"colour": "blue"
 	},
 	{
 		"icon": 28,
 		"name": "Sky",
+		"glyph": "cloud",
 		"colour": "blue"
 	},
 	{
 		"icon": 29,
 		"name": "NetworkReplicator",
+		"glyph": "plugs-connected",
 		"colour": "blue"
 	},
 	{
 		"icon": 30,
 		"name": "Debris",
+		"glyph": "squares-pile",
 		"colour": "purple"
 	},
 	{
 		"icon": 31,
 		"name": "SoundService",
+		"glyph": "sounds",
 		"colour": "grey"
 	},
 	{
 		"icon": 32,
 		"name": "Accessory",
+		"glyph": "sunglasses",
 		"colour": "purple"
 	},
 	{
 		"icon": 33,
 		"name": "ChatService",
+		"glyph": "speech-bubble",
 		"colour": "blue"
 	},
 	{
 		"icon": 34,
 		"name": "Joint",
+		"glyph": "chain",
 		"colour": "blue"
 	},
 	{
 		"icon": 35,
 		"name": "Seat",
+		"glyph": "armchair",
 		"colour": "red"
 	},
 	{
 		"icon": 36,
 		"name": "Explosion",
+		"glyph": "bomb",
 		"colour": "yellow"
 	},
 	{
 		"icon": 37,
 		"name": "ForceField",
+		"glyph": "arrows-corners-out",
 		"colour": "green"
 	},
 	{
 		"icon": 38,
 		"name": "Flag",
+		"glyph": "flag",
 		"colour": "blue"
 	},
 	{
 		"icon": 39,
 		"name": "FlagStand",
+		"glyph": "flag-platform",
 		"colour": "blue"
 	},
 	{
 		"icon": 40,
 		"name": "ShirtGraphic",
+		"glyph": "shirt",
 		"colour": "purple"
 	},
 	{
 		"icon": 41,
 		"name": "ClickDetector",
+		"glyph": "hand-point-left",
 		"colour": "blue"
 	},
 	{
 		"icon": 42,
 		"name": "Sparkles",
+		"glyph": "sparkle",
 		"colour": "purple"
 	},
 	{
 		"icon": 43,
 		"name": "Shirt",
+		"glyph": "shirt-jacket",
 		"colour": "purple"
 	},
 	{
 		"icon": 44,
 		"name": "Pants",
+		"glyph": "trousers",
 		"colour": "purple"
 	},
 	{
 		"icon": 45,
 		"name": "Hat",
+		"glyph": "top-hat",
 		"colour": "purple"
 	},
 	{
 		"icon": 46,
 		"name": "StarterGui",
+		"glyph": "folder-window",
 		"colour": "blue"
 	},
 	{
 		"icon": 47,
 		"name": "ScreenGui",
+		"glyph": "window",
 		"colour": "blue"
 	},
 	{
 		"icon": 48,
 		"name": "Frame",
+		"glyph": "frame",
 		"colour": "yellow"
 	},
 	{
 		"icon": 49,
 		"name": "ImageLabel",
+		"glyph": "picture-rect-corners",
 		"colour": "green"
 	},
 	{
 		"icon": 50,
 		"name": "TextLabel",
+		"glyph": "text-rect-corners",
 		"colour": "blue"
 	},
 	{
 		"icon": 51,
 		"name": "TextButton",
+		"glyph": "text-rect",
 		"colour": "blue"
 	},
 	{
 		"icon": 52,
 		"name": "ImageButton",
+		"glyph": "picture-rect",
 		"colour": "green"
 	},
 	{
 		"icon": 53,
 		"name": "Handles",
+		"glyph": "circles-axes-3d",
 		"colour": "blue"
 	},
 	{
 		"icon": 54,
 		"name": "SelectionBox",
+		"glyph": "cube-outline",
 		"colour": "blue"
 	},
 	{
 		"icon": 55,
 		"name": "SurfaceSelection",
+		"glyph": "cube-outline-face",
 		"colour": "yellow"
 	},
 	{
 		"icon": 56,
 		"name": "ArcHandles",
+		"glyph": "circles-ring",
 		"colour": "blue"
 	},
 	{
 		"icon": 57,
 		"name": "SelectionLasso",
+		"glyph": "lasso",
 		"colour": "red"
 	},
 	{
 		"icon": 58,
 		"name": "Configuration",
+		"glyph": "folder-cog",
 		"colour": "grey"
 	},
 	{
 		"icon": 59,
 		"name": "Smoke",
+		"glyph": "cloud",
 		"colour": "grey"
 	},
 	{
 		"icon": 60,
 		"name": "Animation",
+		"glyph": "film-reel",
 		"colour": "grey"
 	},
 	{
 		"icon": 61,
 		"name": "Fire",
+		"glyph": "flame",
 		"colour": "red"
 	},
 	{
 		"icon": 62,
 		"name": "Dialog",
+		"glyph": "speech-bubble-exclaim",
 		"colour": "blue"
 	},
 	{
 		"icon": 63,
 		"name": "DialogChoice",
+		"glyph": "speech-bubble-ellipsis",
 		"colour": "blue"
 	},
 	{
 		"icon": 64,
 		"name": "BillboardGui",
+		"glyph": "window-above-cube",
 		"colour": "red"
 	},
 	{
 		"icon": 65,
 		"name": "Terrain",
+		"glyph": "hill-layers",
 		"colour": "green"
 	},
 	{
 		"icon": 66,
 		"name": "BindableFunction",
+		"glyph": "cuboid-speed",
 		"colour": "purple"
 	},
 	{
 		"icon": 67,
 		"name": "BindableEvent",
+		"glyph": "lightning",
 		"colour": "yellow"
 	},
 	{
 		"icon": 68,
 		"name": "TestService",
+		"glyph": "circle-check",
 		"colour": "green"
 	},
 	{
 		"icon": 69,
 		"name": "ServerStorage",
+		"glyph": "cloud-floppy-disk",
 		"colour": "green"
 	},
 	{
 		"icon": 70,
 		"name": "ReplicatedStorage",
+		"glyph": "servers-dual-arrow",
 		"colour": "red"
 	},
 	{
 		"icon": 71,
 		"name": "ServerScriptService",
+		"glyph": "cloud-script",
 		"colour": "green"
 	},
 	{
 		"icon": 72,
 		"name": "NegateOperation",
+		"glyph": "cube-translucent",
 		"colour": "red"
 	},
 	{
 		"icon": 73,
 		"name": "MeshPart",
+		"glyph": "cube-checkerboard",
 		"colour": "purple"
 	},
 	{
 		"icon": 74,
 		"name": "RemoteFunction",
+		"glyph": "cuboid-speed-server",
 		"colour": "purple"
 	},
 	{
 		"icon": 75,
 		"name": "RemoteEvent",
+		"glyph": "lightning-server",
 		"colour": "yellow"
 	},
 	{
 		"icon": 76,
 		"name": "ModuleScript",
+		"glyph": "script-blocks",
 		"colour": "red"
 	},
 	{
 		"icon": 77,
 		"name": "Folder",
+		"glyph": "folder",
 		"colour": "yellow"
 	},
 	{
 		"icon": 78,
 		"name": "PlayerScripts",
+		"glyph": "folder-script",
 		"colour": "blue"
 	},
 	{
 		"icon": 79,
 		"name": "StarterPlayer",
+		"glyph": "folder-person",
 		"colour": "blue"
 	},
 	{
 		"icon": 80,
 		"name": "ParticleEmitter",
+		"glyph": "sparkle-emitter",
 		"colour": "blue"
 	},
 	{
 		"icon": 81,
 		"name": "Attachment",
+		"glyph": "plug",
 		"colour": "blue"
 	},
 	{
 		"icon": 82,
 		"name": "(unused)",
+		"glyph": "point-join-limited",
 		"colour": "green"
 	},
 	{
 		"icon": 83,
 		"name": "PostEffect",
+		"glyph": "aperture",
 		"colour": "grey"
 	},
 	{
 		"icon": 84,
 		"name": "SoundEffect",
+		"glyph": "waveform-bars",
 		"colour": "purple"
 	},
 	{
 		"icon": 85,
 		"name": "SoundGroup",
+		"glyph": "squares-sound",
 		"colour": "yellow"
 	},
 	{
 		"icon": 86,
 		"name": "BallSocketConstraint",
+		"glyph": "circle-socket-arrow",
 		"colour": "green"
 	},
 	{
 		"icon": 87,
 		"name": "HingeConstraint",
+		"glyph": "hinge",
 		"colour": "green"
 	},
 	{
 		"icon": 88,
 		"name": "PrismaticConstraint",
+		"glyph": "cuboid-hollow-axis",
 		"colour": "green"
 	},
 	{
 		"icon": 89,
 		"name": "RopeConstraint",
+		"glyph": "point-join-slack",
 		"colour": "green"
 	},
 	{
 		"icon": 90,
 		"name": "RodConstraint",
+		"glyph": "point-join-straight",
 		"colour": "green"
 	},
 	{
 		"icon": 91,
 		"name": "SpringConstraint",
+		"glyph": "point-join-wavy",
 		"colour": "green"
 	},
 	{
 		"icon": 92,
 		"name": "LocalizationService",
+		"glyph": "globe-pin",
 		"colour": "green"
 	},
 	{
 		"icon": 93,
 		"name": "Trail",
+		"glyph": "cuboid-trail",
 		"colour": "yellow"
 	},
 	{
 		"icon": 94,
 		"name": "WeldConstraint",
+		"glyph": "welding-torch",
 		"colour": "blue"
 	},
 	{
 		"icon": 95,
 		"name": "CylindricalConstraint",
+		"glyph": "cylinder-hollow-axis",
 		"colour": "green"
 	},
 	{
 		"icon": 96,
 		"name": "Beam",
+		"glyph": "laser",
 		"colour": "yellow"
 	},
 	{
 		"icon": 97,
 		"name": "LocalizationTable",
+		"glyph": "languages",
 		"colour": "green"
 	},
 	{
 		"icon": 98,
 		"name": "PackageLink",
+		"glyph": "package-chain",
 		"colour": "yellow"
 	},
 	{
 		"icon": 99,
 		"name": "AlignPosition",
+		"glyph": "axes-2d-lock",
 		"colour": "red"
 	},
 	{
 		"icon": 100,
 		"name": "AlignOrientation",
+		"glyph": "rotation-2d-lock",
 		"colour": "red"
 	},
 	{
 		"icon": 101,
 		"name": "LineForce",
+		"glyph": "point-arrow-point",
 		"colour": "blue"
 	},
 	{
 		"icon": 102,
 		"name": "VectorForce",
+		"glyph": "point-arrow",
 		"colour": "blue"
 	},
 	{
 		"icon": 103,
 		"name": "Torque",
+		"glyph": "rotation-2d",
 		"colour": "blue"
 	},
 	{
 		"icon": 104,
-		"name": "HumanoiconDescription",
+		"name": "HumanoidDescription",
+		"glyph": "person-pencil",
 		"colour": "yellow"
 	},
 	{
 		"icon": 105,
-		"name": "NoColliconeConstraint",
+		"name": "NoCollisionConstraint",
+		"glyph": "squares-overlap",
 		"colour": "red"
 	},
 	{
 		"icon": 106,
 		"name": "Motor6D",
+		"glyph": "rotation-3d",
 		"colour": "purple"
 	},
 	{
 		"icon": 107,
 		"name": "LineHandleAdornment",
+		"glyph": "axes-3d-line",
 		"colour": "purple"
 	},
 	{
 		"icon": 108,
 		"name": "ImageHandleAdornment",
+		"glyph": "axes-3d-picture",
 		"colour": "purple"
 	},
 	{
 		"icon": 109,
 		"name": "CylinderHandleAdornment",
+		"glyph": "axes-3d-cylinder",
 		"colour": "purple"
 	},
 	{
 		"icon": 110,
 		"name": "ConeHandleAdornment",
+		"glyph": "axes-3d-cone",
 		"colour": "purple"
 	},
 	{
 		"icon": 111,
 		"name": "BoxHandleAdornment",
+		"glyph": "axes-3d-box",
 		"colour": "purple"
 	},
 	{
 		"icon": 112,
 		"name": "SphereHandleAdornment",
+		"glyph": "axes-3d-sphere",
 		"colour": "purple"
 	},
 	{
 		"icon": 113,
 		"name": "Actor",
+		"glyph": "scripts",
 		"colour": "blue"
 	},
 	{
 		"icon": 114,
 		"name": "Bone",
+		"glyph": "bone",
 		"colour": "purple"
 	},
 	{
 		"icon": 115,
 		"name": "(unused)",
+		"glyph": "bone-cube",
 		"colour": "purple"
 	},
 	{
 		"icon": 116,
 		"name": "(unused)",
+		"glyph": "bone-globe",
 		"colour": "purple"
 	},
 	{
 		"icon": 117,
 		"name": "(unused)",
+		"glyph": "bone-x",
 		"colour": "purple"
 	},
 	{
 		"icon": 118,
 		"name": "(unused)",
+		"glyph": "bone-cube-x",
 		"colour": "purple"
 	},
 	{
 		"icon": 119,
 		"name": "(unused)",
+		"glyph": "bone-globe-x",
 		"colour": "purple"
 	},
 	{
 		"icon": 120,
 		"name": "VideoFrame",
+		"glyph": "film-reel",
 		"colour": "blue"
 	},
 	{
 		"icon": 121,
 		"name": "WrapLayer",
+		"glyph": "cube-arrows-inward",
 		"colour": "blue"
 	},
 	{
 		"icon": 122,
 		"name": "WrapTarget",
+		"glyph": "cube-inside-cube",
 		"colour": "purple"
 	},
 	{
 		"icon": 123,
 		"name": "UniversalConstraint",
+		"glyph": "universal-joint",
 		"colour": "green"
 	},
 	{
 		"icon": 124,
 		"name": "ProximityPrompt",
+		"glyph": "hand-push-button",
 		"colour": "blue"
 	},
 	{
 		"icon": 125,
 		"name": "TorsionSpingConstraint",
+		"glyph": "torsion-spring",
 		"colour": "green"
 	},
 	{
 		"icon": 126,
 		"name": "WrapLayer (alt)",
+		"glyph": "cube-arrows-inward-x",
 		"colour": "blue"
 	},
 	{
 		"icon": 127,
 		"name": "WrapTarget (alt)",
+		"glyph": "cube-inside-cube-x",
 		"colour": "purple"
 	},
 	{
 		"icon": 128,
 		"name": "PathfindingModifier",
+		"glyph": "route-redirect-pin",
 		"colour": "green"
 	},
 	{
 		"icon": 129,
 		"name": "FaceControls",
+		"glyph": "head-cog",
 		"colour": "blue"
 	},
 	{
 		"icon": 130,
 		"name": "MaterialVariant",
+		"glyph": "atom-checkerboard",
 		"colour": "yellow"
 	},
 	{
 		"icon": 131,
 		"name": "MaterialsService",
+		"glyph": "atom",
 		"colour": "blue"
 	},
 	{
 		"icon": 132,
 		"name": "LinearVelocity",
+		"glyph": "circle-arrow-linear",
 		"colour": "blue"
 	},
 	{
 		"icon": 133,
 		"name": "Highlight",
+		"glyph": "squares-emphasis",
 		"colour": "yellow"
 	},
 	{
 		"icon": 134,
 		"name": "PlaneConstraint",
+		"glyph": "plane",
 		"colour": "green"
 	}
 ]
