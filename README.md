@@ -16,7 +16,7 @@
 
 # Metadata
 
-Starting with Vanilla v2, extra metadata is exposed about icons so they can be processed by your own programs.
+Starting with Vanilla V2, extra metadata is exposed about icons so they can be processed by your own programs.
 
 For JSON data about which icons are included in the set, including colour and human-readable name, see:
 https://elttob.github.io/Vanilla/icons/icondata.json
@@ -30,10 +30,9 @@ https://elttob.github.io/Vanilla/icons/icons.svg
 # Licensing
 *The icons themselves are licensed differently than this repository.*
 
-The Vanilla icon set is licensed under Creative Commons BY-NC 4.0 International.
-https://creativecommons.org/licenses/by-nc/4.0/
+The Vanilla icon set is licensed under [Creative Commons BY-NC 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/).
 
-The Vanilla website/repository is licensed under the MIT license (see LICENSE.md)
+The Vanilla website/repository is licensed under the MIT license [(see LICENSE.md)](https://github.com/Elttob/Vanilla/blob/main/LICENSE)
 
 # Contributions
 
