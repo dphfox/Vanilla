@@ -2,7 +2,7 @@
 // MIT License (c) Elttob 2021
 
 // Instead of using relative URLs, we're using absolute URLs for portability.
-const BASE_URL = "https://elttob.github.io/Vanilla/icons/"
+const BASE_URL = "https://elttob.uk/Vanilla/icons/"
 // The size of icons on the icon sheet, in pixels
 const ICON_SIZE = 16
 

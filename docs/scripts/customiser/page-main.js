@@ -6,7 +6,7 @@ import * as exporter from "./exporter.js"
 import * as previewer from "./previewer.js"
 
 // Instead of using relative URLs, we're using absolute URLs for portability.
-const BASE_URL = "https://elttob.github.io/Vanilla/icons/"
+const BASE_URL = "https://elttob.uk/Vanilla/icons/"
 
 let icondata
 let palettes

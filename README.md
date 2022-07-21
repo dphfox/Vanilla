@@ -7,7 +7,7 @@
 <p align="center">
 	Smooth, simplified icons for Roblox Studio.
 	<br>
-	<a href="https://elttob.github.io/Vanilla">Customise your icon set →</a>
+	<a href="https://elttob.uk/Vanilla">Customise your icon set →</a>
 </p>
 
 -----
@@ -19,13 +19,13 @@
 Starting with Vanilla v2, extra metadata is exposed about icons so they can be processed by your own programs.
 
 For JSON data about which icons are included in the set, including colour and human-readable name, see:
-https://elttob.github.io/Vanilla/icons/icondata.json
+https://elttob.uk/Vanilla/icons/icondata.json
 
 For JSON data about the colour palettes supported by the Vanilla customiser, see:
-https://elttob.github.io/Vanilla/icons/palettes.json
+https://elttob.uk/Vanilla/icons/palettes.json
 
 The SVG spritesheet containing all Vanilla icons can be found at:
-https://elttob.github.io/Vanilla/icons/icons.svg
+https://elttob.uk/Vanilla/icons/icons.svg
 
 # Licensing
 *The icons themselves are licensed differently than this repository.*
