@@ -2,39 +2,10 @@
 	Vanilla
 </h2>
 <h3 align="center">
-	v2.1
+	v3.0
 </h3>
 <p align="center">
-	Smooth, simplified icons for Roblox Studio.
+	Now available over at itch.io
 	<br>
-	<a href="https://elttob.uk/Vanilla">Customise your icon set →</a>
+	<a href="https://elttob.itch.io/vanilla-3-for-roblox-studio">View Vanilla on itch.io →</a>
 </p>
-
------
-
-<br>
-
-# Metadata
-
-Starting with Vanilla v2, extra metadata is exposed about icons so they can be processed by your own programs.
-
-For JSON data about which icons are included in the set, including colour and human-readable name, see:
-https://elttob.uk/Vanilla/icons/icondata.json
-
-For JSON data about the colour palettes supported by the Vanilla customiser, see:
-https://elttob.uk/Vanilla/icons/palettes.json
-
-The SVG spritesheet containing all Vanilla icons can be found at:
-https://elttob.uk/Vanilla/icons/icons.svg
-
-# Licensing
-*The icons themselves are licensed differently than this repository.*
-
-The Vanilla icon set is licensed under Creative Commons BY-NC 4.0 International.
-https://creativecommons.org/licenses/by-nc/4.0/
-
-The Vanilla website/repository is licensed under the MIT license (see LICENSE.md)
-
-# Contributions
-
-Community contributed icons are not being accepted at this time. If you'd like an icon to be added, open an issue!
